@@ -1,0 +1,81 @@
+C# PLUGIN TEMPLATE FOR RAINMETER (x86 AND x64)
+
+    This is version 1.01 of this document.
+    Peter Souza IV, December 14th, 2010
+
+   
+
+Software Requirements
+=====================
+
+    Title:      Microsoft Visual C# Express 2008 ... or ...
+                Microsoft Visual Studio 2008 ... or ...
+                Microsoft Visual C# Express 2010 ... or ...
+                Microsoft Visual Studio 2010
+    From:       www.microsoft.com/downloads
+    Note:       Any version will work, use what you have or can download
+    License:    Express versions are free
+
+    Title:      .NET Framework 2.0 (with the latest service pack)
+    From:       www.microsoft.com/downloads
+    Note:       Windows Vista, 7, and 2008 have this installed already.
+    License:    Free
+
+    Title:      .NET Framework 2.0 SDK
+    From:       www.microsoft.com/downloads
+    Note:       You need ildasm.exe from this package, which may have been
+                included in this package automatically.
+    License:    Free
+
+    Title:      C# DLL for C
+    Note:       Included in this package automatically.
+    License:    Free
+
+
+    
+Concept
+=======
+
+The basic idea of allowing C/C++ (and other platforms) to use C# assemblies is
+to use the IL disassembler in conjunction with the IL assembler.  In between,
+the "C# DLL for C" utility will automatically scan the .il data and produce
+exports that are visible from C/C++.  This process is also known as a
+"Reverse P/Invoke".
+
+
+
+Building
+========
+
+During the build process, a batch file will automatically execute as a
+post-build event that prepares your plugin's binaries for C/C++'s use.  This
+step will also copy the plugin to a new folder at the root of this project
+called /_compiled/.  These can be used directly in Rainmeter (use the 32-bit
+version with the 32-bit installation of Rainmeter and the 64-bit version with
+the 64-bit installation of Rainmeter).
+
+You may notice that the solution file contains both the x86 and x64 projects
+and are both built at the same time.  They both share the same souce code
+in /Shared Source/.  If you change the source code for one project, it will
+change it for both.  If you add new files to the project, by default, Visual
+Studio (or Visual C# Express, depending on your version) will only include it
+in one project.  Simply right-click the project in the development environment
+to 'Add existing file' to make sure that both get code updates.
+
+
+
+Updates
+=======
+
+Check in with the Rainmeter development team from time to time or the SVN
+for updates to the template.  Most notably, the toolkit (Rainmeter.cs),
+which provides your plugin with the necessary tools to facilitate rapid
+development in C#.
+
+
+
+C# Template Toolkit Reference
+=============================
+For syntax reference and more on how to use the C# template and its toolkit,
+please visit the Rainmeter website at www.Rainmeter.net and navigate to the
+documentation section.

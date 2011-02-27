@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchPlugin (x64)", "BatchPlugin (x64)\BatchPlugin (x64).csproj", "{3ADA7253-B7E6-4249-B384-34FCEB3A01F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchPlugin (x86)", "BatchPlugin (x86)\BatchPlugin (x86).csproj", "{3ADA7253-B7E6-4249-B384-34FCEB3A01FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ADA7253-B7E6-4249-B384-34FCEB3A01F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADA7253-B7E6-4249-B384-34FCEB3A01F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADA7253-B7E6-4249-B384-34FCEB3A01FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADA7253-B7E6-4249-B384-34FCEB3A01FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
